@@ -1,6 +1,6 @@
 <b> Riconoscimenti </b>
 
-Disegno e Icone :  <b>Unknown</b><br>
+Disegno e Icone :  <b>Anna Cagni </b><br>
 
 Testing : <b>Giulia Pastrolin</b><br>
 

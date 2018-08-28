@@ -25,7 +25,7 @@
 
 
 
-<h1> COLLABORATORI </h1>
-<p> Icone : .......</p>
-<p> Testing : ........ </p>
-<p> Conoscenze : ...... </p>
+<h1> Collaboratori</h1>
+<p> Icone : .......</p><br>
+<p> Testing : ........ </p><br>
+<p> Conoscenze : ...... </p><br>

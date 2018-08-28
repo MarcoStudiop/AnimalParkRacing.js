@@ -1,17 +1,17 @@
 <b> Riconoscimenti </b>
 
-Disegno e Icone :  <b>Uknown</b><br>
+Disegno e Icone :  <b>Unknown</b><br>
 
 Testing : <b>Giulia Pastrolin</b><br>
 
-Sviluppo parte Server : <b>Uknown</b><br>
+Sviluppo parte Server : <b>Unknown</b><br>
 
-Sviluppo applicazione : <b>Uknown</b><br>
+Sviluppo applicazione : <b>Unknown</b><br>
 
-Gestione audio : <b>Uknown</b><br>
+Gestione audio : <b>Unknown</b><br>
 
-Gestione grafica : <b>Uknown</b><br>
+Gestione grafica : <b>Unknown</b><br>
 
-Gestione contenuto : <b>Uknown</b><br>
+Gestione contenuto : <b>Unknown</b><br>
 
-Conoscenze gara : <b>Uknown</b><br>
+Conoscenze gara : <b>Unknown</b><br>

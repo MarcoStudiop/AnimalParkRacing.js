@@ -29,3 +29,10 @@
 <p> Icone : .......</p><br>
 <p> Testing : ........ </p><br>
 <p> Conoscenze : ...... </p><br>
+
+
+
+
+
+<h1> Problemi 0.0.1 </h1>
+<p> Incompatibilita : con Browser Internet Explorer </p>

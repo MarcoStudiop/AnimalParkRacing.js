@@ -23,3 +23,9 @@
 <li>5) BUTTON <b>"NUOVA PARTITA"</b> (RICARICA LA PAGINA)  BUTTON <b>"INIZIA PARTITA"</b> (STARTA IL GIOCO)</li>
 </ul>
 
+
+
+<h1> COLLABORATORI </h1>
+<p> Icone : .......</p>
+<p> Testing : ........ </p>
+<p> Conoscenze : ...... </p>

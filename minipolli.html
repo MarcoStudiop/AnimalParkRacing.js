@@ -1,0 +1,148 @@
+<!doctype >
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- meta per la  compatibilità -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pollo Park</title>
+    <link rel="stylesheet" type="text/css" href="css/minipolli.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+        <h1 class="titolo">Welcome to Chicken Park Race 0.0.1 </h1>
+
+            </div>
+        <div class="selezione">
+            <!--MENU PRINCIPALE-->
+            <div id="menuGame" class="div-left col-xsx-12 col-smx-12 col-mdx-1 col-lgx-1">
+                <button type="button" onclick="ricarica();">Nuova Partita</button>
+                <button type="button" onclick="start();">Avvia Partita</button>
+            </div>
+ 
+            
+            <!--BOX DI SELEZIONE PERSONAGGI/COMANDI/-->
+            <div id="selplayer"  class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+                <label>PLAYER 1 :</label>
+                <select id="player1">
+                    <option id="personaggio" value="p1">Cassandro Red</option>
+                    <option id="personaggio" value="p2">Mario Blue</option>
+                    <option id="personaggio" value="p3">Pino Green</option>
+                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+                </select>
+                <label>PlAYER 2 :</label>
+                <select id="player1">
+                    <option id="personaggio" value="p1">Cassandro Red</option>
+                    <option id="personaggio" value="p2">Mario Blue</option>
+                    <option id="personaggio" value="p3">Pino Green</option>
+                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+                </select>
+            </div>
+
+   
+
+            <!--LISTA COMANDI-->
+            
+            <div id="comandi"  class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+                <label>Comandi PLAYER 1 :</label>
+                <p> TASTI : W(su,A(sinistra),S(giù),D(destra)</p>
+                <label>Comandi PLAYER 2 :</label>
+                <p> TASTI : FrecciaSu,FrecciaGiu,FrecciaDestra,FrecciaSinistra</p>
+            </div>
+            
+          
+
+
+            <!--LISTA IMPOSTAZIONI-->
+            <div id=impostazioni  class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+                <label> Singleplayer</label><input type="checkbox" id="1player">
+                <label> Multiplayer x2 </label> <input type="checkbox" id="2player">
+            </div>
+            
+            <div class="clearfix"></div>
+        </div>
+      
+
+        <!--CAMPO DEL GIOCO -->
+        <div id="recinto">
+            <div id="partenza"></div>
+
+            <div id="fine"></div>
+
+        </div>
+
+        <!--BARRA RISULTATO + BARRA PERSONAGGI-->
+        <div class="pannello col-xsx-12 col-smx-12 col-mdx-12 col-lgx-12">
+            <div class="output div-left col-xsx-12 col-smx-12 col-mdx-9 col-lgx-9  ">
+                
+                <h1 class="riquadro">Output</h1>
+                <hr id="hash-line">
+                <div id="nomepartita"></div>
+                <hr id="hash-line">
+                <div id="partecipanti"></div>
+                <hr id="hash-line">
+                <div id="classifica"></div>
+                <hr id="hash-line">
+            </div>
+
+            <div class="personaggi div-left col-xsx-12 col-smx-12 col-mdx-3 col-lgx-3 ">
+                <h1 class="riquadro">PERSONAGGI VERSIONE 0.1</h1>
+
+                <div class="galleria"></div>
+
+                <img id="slider" class="col-smx-12" src="http://via.placeholder.com/300x300">
+
+                <button type="button" onclick="prev();">prev</button>
+                <button type="button" onclick="next();">next</button>
+
+
+
+
+            </div>
+        </div>
+        <!--
+        
+            BREVE IDEA
+
+            -#1 Un immagine di un pollo
+            -#2 Stabilire dimensione del pollo
+            -#3 Creare la struttura della strada che farà
+            il/i nostro/i pollo/i
+            -#4 Creare un object pollo
+            -#4 object pollo con un nome , un peso, un altezza, un messaggio
+            -#5 Creare una funzione di inizializzazione, una funzione di movimento
+            -#6 la funzione di inizializzazione posizionerà il pollo/polli in un preciso
+            punto della nostra pagina
+            -#7 la funzione di movimento farà muovere i nostri polli
+            -#8 variabili posizione,coordinate X e Y
+            -#9 Ciascun pollo avrà una propria coordinata e una propria posizione
+        
+        -->
+
+
+
+
+
+        <script type="text/javascript" src="js/pollo.js"></script>
+
+
+    </div>
+    <!--CHIUSURA CONTAINER-->
+
+
+
+
+
+
+
+
+</body>
+
+</html>

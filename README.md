@@ -2,26 +2,57 @@
 <h1>PolloParkracingJS</h1>
 
 
-<b>Versione 0.0.1</b>
-
+<b>Indie</b> 
+<b>Gara</b> 
+<b>Corse</b> 
+<b>Animali</b>
 
 <p>#Pollo Park Racing è una gara di 3 polli che gareggiano su una linea retta<br>
 #il primo che supera la linea di destinazione bianca vince.</p>
 
 
-<b>Contenuto 0.0.1</b>
+<b>Guida Linux</b>
 
-<ul>
-<li>1) PLAYER VS 2 BOT</li>
+1) Scarica il file zip or copia il link git (premi sul bottone verde in alto a destra)
 
-<li>2) PAGINA HTML CON STILE CSS ANCORA DA SISTEMARE</li>
+2) Apri il terminale
+ 
+3) <pre>cd  path/to/directory<pre>  
 
-<li>3) I POLLI SUPERANO DI NETTO LA STRISCIA ATTRAVERSO UN VALORE RANDOM</li>
+4) <pre>git clone url https://github.com/MarcoStudiop/PolloParkracingJS.git</pre>
+ 
+5) Estrai la cartella generata con i comandi del tuo sistema o con il tasto destro sulla cartella
 
-<li>4) È PRESENTE UNA CLASSIFICA PER RIASSUMERE LE POSIZIONI DI CIASCUN POLLO E STABILIRE IL VINCITORE</li>
+6) in arch linux è <pre> pacman -U cartella.qualcosa</pre>
 
-<li>5) BUTTON <b>"NUOVA PARTITA"</b> (RICARICA LA PAGINA)  BUTTON <b>"INIZIA PARTITA"</b> (STARTA IL GIOCO)</li>
-</ul>
+7) apri la cartella
 
-<b> Problemi 0.0.1 </b>
-<p> Incompatibilita : con Browser Internet Explorer </p>
+8) doppio click sul file <b>minipolli.html</b>
+
+
+<b>Guida Windows</b>
+
+2) Se hai scaricato il file <b>ZIP</b> 
+
+3) Vai in <b> Downloads </b> 
+
+4) Cerca la cartella <b> PolloParkracingJS </b>
+
+5) Estrai qui o dove vuoi tu
+
+6) Apri la cartella 
+
+7) doppio click sul file <b>minipolli.html</b>
+
+
+<b> Funzionamento </b>
+
+INTERNET EXPLORE (NON FUNZIONA)
+TESTATO SU GOOGLE CHROME
+
+1) AVVI PARTITA
+2) SCRIVI IL GIOCATORE DA USARE
+3) SCRIVI NOME PARTITA
+4) FINE PARTITA
+
+5? SE VUOI RIPROVARE  CLICCA SU "NUOVA PARTITA"

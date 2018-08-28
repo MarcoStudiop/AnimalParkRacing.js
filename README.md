@@ -23,16 +23,10 @@
 <li>5) BUTTON <b>"NUOVA PARTITA"</b> (RICARICA LA PAGINA)  BUTTON <b>"INIZIA PARTITA"</b> (STARTA IL GIOCO)</li>
 </ul>
 
+<b> Collaboratori</b>
+<p> Icone : .......</p><br/>
+<p> Testing : ........ </p><br/>
+<p> Conoscenze : ...... </p><br/>
 
-
-<h1> Collaboratori</h1>
-<p> Icone : .......</p><br>
-<p> Testing : ........ </p><br>
-<p> Conoscenze : ...... </p><br>
-
-
-
-
-
-<h1> Problemi 0.0.1 </h1>
+<b> Problemi 0.0.1 </b>
 <p> Incompatibilita : con Browser Internet Explorer </p>

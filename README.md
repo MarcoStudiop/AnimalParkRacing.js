@@ -17,7 +17,7 @@
 
 2) Apri il terminale
  
-3) <pre>cd  path/to/directory<pre>  
+3) <pre>cd  path/to/directory</pre>  
 
 4) <pre>git clone url https://github.com/MarcoStudiop/PolloParkracingJS.git</pre>
  

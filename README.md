@@ -2,7 +2,7 @@
 <h1>PolloParkracing</h1>
 
 
-<b>Versione 0.0.1<b>
+<b>Versione 0.0.1</b>
 
 
 <p>#Pollo Park Racing è una gara di 3 polli che gareggiano su una linea retta<br>

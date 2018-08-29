@@ -19,7 +19,7 @@
  
 3) <pre>cd  path/to/directory</pre>  
 
-4) <pre>git clone url https://github.com/MarcoStudiop/PolloParkracingJS.git</pre>
+4) <pre>git clone https://github.com/MarcoStudiop/PolloParkracingJS.git</pre>
  
 5) Estrai la cartella generata con i comandi del tuo sistema o con il tasto destro sulla cartella
 
@@ -34,7 +34,7 @@
 
 2) Se hai scaricato il file <b>ZIP</b> 
 
-3) Vai in <b> Downloads </b> 
+3) Vai nella cartella <b> Downloads </b> 
 
 4) Cerca la cartella <b> PolloParkracingJS </b>
 
@@ -47,12 +47,13 @@
 
 <b> Funzionamento </b>
 
-INTERNET EXPLORE (NON FUNZIONA)
+INTERNET EXPLORER (NON FUNZIONA)
 TESTATO SU GOOGLE CHROME
 
-1) AVVI PARTITA
-2) SCRIVI IL GIOCATORE DA USARE
-3) SCRIVI NOME PARTITA
-4) FINE PARTITA
+1) Avvia Partita
+2) Scrivi uno tra i seguenti valori : 01 o 02 o 03 in base al personaggio
+3) Scrivi il nome che vuoi dare a questa partita
+4) Il programma partirà e si concluderà appena uno dei tre partecipanti supererà la meta
+5) in basso troverete l'output e il risultato della partita con l'eventuale classifica
 
-5? SE VUOI RIPROVARE  CLICCA SU "NUOVA PARTITA"
+6? Se vuoi riprovare "Nuova Partita"

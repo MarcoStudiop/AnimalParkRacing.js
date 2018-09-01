@@ -325,6 +325,8 @@ template {
   display: none;
 }
 
+
+
 /* CONTAINER MAIN*/
 .container {
   margin: 0;
@@ -363,7 +365,7 @@ template {
   width: 20px;
   height: 300px;
   background-color: white;
-  left: 1000px;
+  left: 1500px;
   position: absolute;
   z-index: 0;
 }

@@ -1,2 +1,3 @@
 [submodule "js/fullPage.js"]
-	url = https://github.com/alvarotrigo/fullPage.js
+	url = git://github.com/alvarotrigo/fullPage.js.git
+	path = js/fullPage.js

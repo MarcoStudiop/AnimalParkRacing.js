@@ -1,5 +1,5 @@
 
-<h1>PolloParkracingJS</h1><img src="https://img.shields.io/badge/PolloParkRacing-v0.3-green.svg">
+<h1>PolloParkracingJS</h1><p><img src="https://img.shields.io/badge/PolloParkRacing-v0.3-green.svg"><img src="https://img.shields.io/github/license/MarcoStudiop/PolloParkracingJS.svg"></p>
 
 
 <h2>Introduzione</h2>

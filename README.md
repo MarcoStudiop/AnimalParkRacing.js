@@ -1,7 +1,8 @@
 
-<h1>PolloParkracingJS</h1>
+<h1>PolloParkracingJS</h1><img src="https://img.shields.io/badge/PolloParkRacing-v0.3-green.svg">
 
 
+<h2>Introduzione</h2>
 <b>Indie</b> 
 <b>Gara</b> 
 <b>Corse</b> 
@@ -11,7 +12,7 @@
 #il primo che supera la linea di destinazione bianca vince.</p>
 
 
-<b>Guida Linux</b>
+<h2>Guida Linux</h2>
 
 1) Scarica il file zip or copia il link git (premi sul bottone verde in alto a destra)
 
@@ -30,7 +31,7 @@
 8) doppio click sul file <b>minipolli.html</b>
 
 
-<b>Guida Windows</b>
+<h2>Guida Windows</h2>
 
 2) Se hai scaricato il file <b>ZIP</b> 
 
@@ -45,7 +46,7 @@
 7) doppio click sul file <b>minipolli.html</b>
 
 
-<b> Funzionamento </b>
+<h2> Funzionamento </h2>
 
 INTERNET EXPLORER (NON FUNZIONA)
 TESTATO SU GOOGLE CHROME

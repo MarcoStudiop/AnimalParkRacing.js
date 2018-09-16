@@ -2,141 +2,288 @@
 <html lang="en">
 
 <head>
+    <!---------------------------------------------------------------------------------------------->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- meta per la  compatibilità -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pollo Park</title>
-    <link rel="stylesheet" type="text/css" href="css/minipolli.css">
-</head>
+    <!---------------------------------------------------------------------------------------------->
 
-<body>
+    <title>Pollo Park</title>
+
+    <!---------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="css/minipolli.css">
+
+</head>
+<!--onload="welcome()"-->
+
+<body onload="visit()">
 
     <div class="container">
+        <!---------------------------------------------------------------------------------------------->
         <div class="header">
-        <h1 class="titolo">Welcome to Chicken Park Race 0.0.1 </h1>
+            <h1 class="titolo">Welcome to Chicken Park Race 0.3 </h1>
 
-            </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+
+
         <div class="selezione">
+
             <!--MENU PRINCIPALE-->
+            <!---------------------------------------------------------------------------------------------->
             <div id="menuGame" class="div-left col-xsx-12 col-smx-12 col-mdx-1 col-lgx-1">
-                <button type="button" onclick="ricarica();">Nuova Partita</button>
-                <button type="button" onclick="start();">Avvia Partita</button>
+
+                <button id="reset" type="button" >RESET</button>
+                <button id="play" type="button">PLAY</button>
+                <br>
+                <br>
+                <label>Modalità di gioco</label>
+                <br>
+                <select id="mode">
+                        <option>1 GIOCATORI</option>
+                        <option>2 GIOCATORI</option>
+                        <option>3 GIOCATORI</option>
+                </select>
+                <br>
+
             </div>
- 
-            
+            <!---------------------------------------------------------------------------------------------->
+
+
             <!--BOX DI SELEZIONE PERSONAGGI/COMANDI/-->
-            <div id="selplayer"  class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
-                <label>PLAYER 1 :</label>
-                <select id="player1">
-                    <option id="personaggio" value="p1">Cassandro Red</option>
-                    <option id="personaggio" value="p2">Mario Blue</option>
-                    <option id="personaggio" value="p3">Pino Green</option>
-                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
-                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
-                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+            <!---------------------------------------------------------------------------------------------->
+
+            <div id="selplayer" class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+                <!---------------------------------------------------------------------------------------------->
+                <label>PLAYER 1</label>
+                <br>
+                <!---------------------------------------------------------------------------------------------->
+                <select id="player01">
+                    <option class="personaggio" value="p0">none</option>
+                    <option class="personaggio" value="p1">Cassandro Red</option>
+                    <option class="personaggio" value="p2">Mario Blue</option>
+                    <option class="personaggio" value="p3">Pino Green</option>
+                    <option class="personaggio" value="p4">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p5">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p6">Nuovo Personaggio</option>
                 </select>
-                <label>PlAYER 2 :</label>
-                <select id="player1">
-                    <option id="personaggio" value="p1">Cassandro Red</option>
-                    <option id="personaggio" value="p2">Mario Blue</option>
-                    <option id="personaggio" value="p3">Pino Green</option>
-                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
-                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
-                    <option id="personaggio" value="p1">Nuovo Personaggio</option>
+                <!---------------------------------------------------------------------------------------------->
+                <br>
+                <label>PlAYER 2</label>
+                <br>
+                <!---------------------------------------------------------------------------------------------->
+                <select id="player02">
+                    <option class="personaggio" value="p0">none</option>
+                    <option class="personaggio" value="p1">Cassandro Red</option>
+                    <option class="personaggio" value="p2">Mario Blue</option>
+                    <option class="personaggio" value="p3">Pino Green</option>
+                    <option class="personaggio" value="p4">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p5">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p6">Nuovo Personaggio</option>
                 </select>
+                <!---------------------------------------------------------------------------------------------->
+                <br>
+                <label>PlAYER 3</label>
+                <br>
+                <!---------------------------------------------------------------------------------------------->
+                <select id="player03">
+                    <option class="personaggio" value="p0">none</option>
+                    <option class="personaggio" value="p1">Cassandro Red</option>
+                    <option class="personaggio" value="p2">Mario Blue</option>
+                    <option class="personaggio" value="p3">Pino Green</option>
+                    <option class="personaggio" value="p4">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p5">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p6">Nuovo Personaggio</option>
+                </select>
+                <!---------------------------------------------------------------------------------------------->
             </div>
 
-   
+
 
             <!--LISTA COMANDI-->
-            
-            <div id="comandi"  class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+            <!---------------------------------------------------------------------------------------------->
+            <div id="comandi" class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
                 <label>Comandi PLAYER 1 :</label>
-                <p> TASTI : W(su,A(sinistra),S(giù),D(destra)</p>
+                <p> TASTI : <button id="comando1" type="button" value="100">d</button> Ti muovi a destra </p>
                 <label>Comandi PLAYER 2 :</label>
-                <p> TASTI : FrecciaSu,FrecciaGiu,FrecciaDestra,FrecciaSinistra</p>
+                <p> TASTI : <button id="comando2" type="button" value="39">-></button>Ti muovi a destra </p>
             </div>
-            
-          
+            <!---------------------------------------------------------------------------------------------->
+
+
+            <!--TEST UNICODE 0.3 -->
+            <!--
+                <p>TASTO PREMUTO-  <span id="demo2"></span></p>
+            -->
+
 
 
             <!--LISTA IMPOSTAZIONI-->
-            <div id=impostazioni  class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
-                <label> Singleplayer</label><input type="checkbox" id="1player">
-                <label> Multiplayer x2 </label> <input type="checkbox" id="2player">
+            <!---------------------------------------------------------------------------------------------->
+            <div id=impostazioni class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+
+                <button class="multi" type="button" onclick="start();">Gara x6(PROSSIMAMENTE)</button>
+                <button class="multi" type="button" onclick="start();">Multiplayer LAN(PROSSIMAMENTE)</button>
+
             </div>
-            
-            <div class="clearfix"></div>
+            <!---------------------------------------------------------------------------------------------->
+
+
         </div>
-      
+
 
         <!--CAMPO DEL GIOCO -->
+        <!---------------------------------------------------------------------------------------------->
         <div id="recinto">
             <div id="partenza"></div>
 
             <div id="fine"></div>
 
         </div>
+        <!---------------------------------------------------------------------------------------------->
 
         <!--BARRA RISULTATO + BARRA PERSONAGGI-->
+        <!---------------------------------------------------------------------------------------------->
         <div class="pannello col-xsx-12 col-smx-12 col-mdx-12 col-lgx-12">
+
+            <!--OUTPUT-->
+            <!---------------------------------------------------------------------------------------------->
             <div class="output div-left col-xsx-12 col-smx-12 col-mdx-9 col-lgx-9  ">
-                
+
+                <!---------------------------------------------------------------------------------------------->
                 <h1 class="riquadro">Output</h1>
+                <!---------------------------------------------------------------------------------------------->
                 <hr id="hash-line">
+                <!---------------------------------------------------------------------------------------------->
                 <div id="nomepartita"></div>
+                <!---------------------------------------------------------------------------------------------->
                 <hr id="hash-line">
+                <!---------------------------------------------------------------------------------------------->
                 <div id="partecipanti"></div>
+                <!---------------------------------------------------------------------------------------------->
                 <hr id="hash-line">
+                <!---------------------------------------------------------------------------------------------->
                 <div id="classifica"></div>
+                <!---------------------------------------------------------------------------------------------->
                 <hr id="hash-line">
             </div>
+            <!---------------------------------------------------------------------------------------------->
 
+            <!--BOX PERSONAGGI-->
+            <!---------------------------------------------------------------------------------------------->
             <div class="personaggi div-left col-xsx-12 col-smx-12 col-mdx-3 col-lgx-3 ">
+
                 <h1 class="riquadro">PERSONAGGI VERSIONE 0.1</h1>
 
                 <div class="galleria"></div>
 
                 <img id="slider" class="col-smx-12" src="http://via.placeholder.com/300x300">
 
+
                 <button type="button" onclick="prev();">prev</button>
                 <button type="button" onclick="next();">next</button>
-
+                <!---------------------------------------------------------------------------------------------->
 
 
 
             </div>
         </div>
-        <!--
-        
-            BREVE IDEA
-
-            -#1 Un immagine di un pollo
-            -#2 Stabilire dimensione del pollo
-            -#3 Creare la struttura della strada che farà
-            il/i nostro/i pollo/i
-            -#4 Creare un object pollo
-            -#4 object pollo con un nome , un peso, un altezza, un messaggio
-            -#5 Creare una funzione di inizializzazione, una funzione di movimento
-            -#6 la funzione di inizializzazione posizionerà il pollo/polli in un preciso
-            punto della nostra pagina
-            -#7 la funzione di movimento farà muovere i nostri polli
-            -#8 variabili posizione,coordinate X e Y
-            -#9 Ciascun pollo avrà una propria coordinata e una propria posizione
-        
-        -->
-
-
-
-
-
-        <script type="text/javascript" src="js/pollo.js"></script>
-
 
     </div>
     <!--CHIUSURA CONTAINER-->
 
+    <!---------------------------------------------------------------------------------------------->
 
+    <!--SCRIPT MODULI-->
+    <script src="js/pollo.js" type="module"></script>
+    <!--IL GIOCO-->
+    <script src="js/modules/autojoy.js" type="module"></script>
+    <!--JOY-->
+
+    <script type="module">
+
+        //FUNZIONI IMPORTATE IN PAGINA
+    
+        //---------------------------------------------------------------------------------------------//
+        import {start} from "./js/pollo.js";
+        import {ricarica} from "./js/pollo.js";
+         //import {tasto_D} from "./js/pollo.js";
+        
+         //---------------------------------------------------------------------------------------------//
+        
+        //FUNZIONI ASSOCIATE AI BUTTON
+        
+        //---------------------------------------------------------------------------------------------//
+        var play = document.getElementById("play");
+        play.onclick = start;
+        var reset = document.getElementById("reset");
+        reset.onclick = ricarica;
+     
+        //var  tasto = document.getElementById("comando1");
+        // COSI FUNZIONA SE CLICCO SUL BUTTON D
+        
+        /*tasto.onclick = function(){tasto_D();};*/
+        
+        // COSI FUNZIONA ANCHE MA DEVO ASSOCIARGLI BENE L'ID
+
+        /*tasto.onkeypress = function(){ tasto_D();};*/
+
+        //---------------------------------------------------------------------------------------------//
+    </script>
+
+    <script type="text/javascript">
+
+
+
+    
+        // HAI GIÀ VISITATO QUESTA PAGINA?
+
+        //IMPEDISCE DI RIVISUALIZZARE CONTINUAMENTE LA PAGINA DI WELCOME
+        function visit() {
+            var visited = localStorage['visited'];
+            if (!visited) {
+                welcome();
+                localStorage['visited'] = true;
+            };
+        }
+        // WELCOME PAGINA
+        //---------------------------------------------------------------------------------------------//
+        function welcome() {
+
+            var first_time = true;
+
+            //---------------------------------------------------------------------------------------------//
+            if (first_time) {
+                var saluto = window.open("welcome.html", "", "width=200", "height=100"); // Opens a new window
+                first_time = false;
+            } else {
+                window.close();
+            }
+
+
+            //---------------------------------------------------------------------------------------------//    
+        };
+
+
+
+        //FIX TEMPORANEO DI CREDENZIALI FIREFOX ETC..
+        //---------------------------------------------------------------------------------------------//
+        var invocation = new XMLHttpRequest();
+        var url = 'http://bar.other/resources/credentialed-content/';
+
+        function callOtherDomain() {
+            if (invocation) {
+                invocation.open('GET', url, true);
+                invocation.withCredentials = true;
+                invocation.onreadystatechange = handler;
+                invocation.send();
+            }
+        };
+
+        //FIX  DI CREDENZIALI GOOGLE ETC..
+        //---------------------------------------------------------------------------------------------//
+
+    </script>
 
 
 

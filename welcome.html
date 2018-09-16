@@ -1,0 +1,140 @@
+<!doctype >
+<html lang="en">
+
+<head>
+    <!---------------------------------------------------------------------------------------------->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- meta per la  compatibilità -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---------------------------------------------------------------------------------------------->
+    <title>Welcome</title>
+    <!---------------------------------------------------------------------------------------------->
+
+    <style>
+    /*IMPORT*/
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Titillium+Web');
+
+    body{margin:0; background-color: #433A4D;}
+    .documento{margin:0;padding-top:2%;padding-left:15%;padding-right: 15%;color:white;}
+    h1,h2{margin:0;font-family: 'Titillium Web', sans-serif;}#scheda h1{text-align:center;}
+    
+    #scheda p,section{padding:15px;background-color: #2D2D2D;border-radius:15px;font-family: 'Josefin Sans', sans-serif;font-size:18px;}
+    a{color:red;}
+
+
+    /* BUTTON PLACE */
+    
+    #feed{margin-top:10px;}
+    button{padding:10px;border:none;color:white;background-color: red;}
+    #chiudi{float:right;}
+    #version{position: absolute;color:white;font-family: 'Josefin Sans', sans-serif;}
+    </style>
+    
+</head>
+
+<body>
+ 
+    
+    <div class="documento">
+        <!---------------------------------------------------------------------------------------------->
+            <h6 id="version">PoloParkRacing Versione 0.3 10/09/2018</h6>
+        <!---------------------------------------------------------------------------------------------->
+        <div id="scheda">
+        <!---------------------------------------------------------------------------------------------->
+            <h1>Introduzione</h1>
+            <p> <strong>Pollo Park Racing 0.3</strong> è un gioco sviluppato in javascript a scopo didattico
+                e di intrattenimento. L'obiettivo è arrivare ad avere un gioco per piattaforma web/browsergame con
+                aggiunta
+                di connessione lan e modalità online a giocatore multiplo.</p>
+
+            <h2>Vuoi Collaborare?</h2>
+            <p>Se hai delle idee che potrebbero aiutarci a migliorare il mio progetto e vuoi unirti
+                al team , mandami una mail a <a href="mailto:markrockfrancy@gmail.com">markrockfrancy@gmail.com</a>.
+            </p>
+            <h2>In che modo?</h2>
+            <p> Trovi il mio progetto tra Le mie repositories di GitHub <a href="https://github.com/MarcoStudiop/PolloParkracingJS">PolloParkracingJS</a>
+                dove puoi reperire il file Zip o il Git scaricandolo dal terminale. Per passarci i file ci organizzeremo man mano usando anche programmi 
+                come <strong>Git Kraken </strong> per l'aggiornamento dei Git , <strong> Skype o Discord </strong> per la condivisione schermo e comunicazione ,
+                e social come <strong>Instagram</strong> e <strong>Twitter</strong> se dovessimo avere successo.
+            </p>
+            <h2>Regole?</h2>
+            <p> Se decidi di partecipare, io non pretendo molto da te, anzi, ti chiedo solo di rispettare semplicemente
+                i tuoi compagni di squadra e di rispettare il lavoro di ciascuno all'interno di questo progetto. 
+                    Puoi decidere di mollare in qualunque momento. In qualunque momento ripeto poiché non sei
+                obbligato da nessuno. Questo è un progetto che non ha come fine di ottenere un guadagno, o al momento 
+                non se ne preoccupa. Le risorse all'interno di questo progetto in parte sono prese da terzi e quindi
+                non abbiamo il diritto di rivendere un idea altrui anche per una questione morale a fini dei nostri
+                obiettivi.</p>
+        <!---------------------------------------------------------------------------------------------->
+
+
+            <h2>Versione 0.3</h2>
+        <!---------------------------------------------------------------------------------------------->
+            <section>
+                <h5>Update Pollo.js</h5>
+                <ul>
+                    <li>Rinonima Player1</li>
+                    <li>Codice Riordinato</li>
+                    <li>Pagina Risistemata</li>
+                    <li><b>Pollo.js</b> e  <b>Autojoy.js</b> sono moduli ora</li>
+                    <li>Aggiunta primo comando di spostamento Tasto<strong>D</strong></li>
+                    <li>Giocabile solo il pollo <b>red</b> Cassandro </li>
+                    <li>Aggiunta array <strong>game_PLAYER</strong> e <strong>game_BOT</strong></li>
+                </ul>
+                <h5>Add Autojoy.js</h5>
+                <ul>
+                    <li>Joy è visibile attraverso il console log</li>
+                    <li>Aggiunte 3 funzioni : <strong>Joy()</strong> <strong>Joy_error()</strong> <strong>Joy_comment()</strong></li>
+                    <li>Le funzioni e le variabili di <b>Joy</b> sono importate utilizzando la sintassi ES6(Ecmascript6)</li>
+                </ul>
+                <h5>Add Page Welcome</h5>
+                <p>
+                    La pagina welcome si apre una volta sola al momento, per poterla rivedere, ripulite la cache del browser.
+                </p>
+
+                <h5>Fix</h5>
+                <ul>
+                    <li>Risolta la comparsa di "undefined" al secondo posto dell'output <strong>Classifica</strong></li>
+                </ul>
+            <section>
+        <!---------------------------------------------------------------------------------------------->
+        </div>
+
+        <!---------------------------------------------------------------------------------------------->
+        <div id="feed">
+                <button id="license" type="button">Licenza</button>
+                <button id="chiudi" type="button">Chiudi</button>
+            </div>
+        <!---------------------------------------------------------------------------------------------->
+
+
+
+    </div>
+
+    <script src="jq/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#license").click(function gnulicense() {
+                alert("### GNU GENERAL PUBLIC LICENSE" + "\n" + "Version 3, 29 June 2007" + "\n" +
+                    "Copyright(C) 2007 Free Software Foundation, " + "\n" +
+                    "Inc. <https: //fsf.org/>");
+            });
+
+
+            $("#chiudi").click(function chiudi() {
+
+                window.close();
+
+            });
+
+
+
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>

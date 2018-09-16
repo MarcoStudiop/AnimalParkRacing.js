@@ -5,7 +5,12 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+
+   /*IMPORT*/
+   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Titillium+Web');
+
+
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -335,7 +340,7 @@ template {
 
 /* SEZIONE : CAMPO DI GIOCO */
 #recinto {
-  background-color: #B3C6B1;
+  background-color:#7A7A7A;
   border: 10px solid rgb(6, 6, 6);
   height: 300px;
   position: relative;
@@ -363,7 +368,7 @@ template {
   width: 20px;
   height: 300px;
   background-color: white;
-  left: 1000px;
+  left: 1500px;
   position: absolute;
   z-index: 0;
 }
@@ -380,8 +385,9 @@ template {
 .output {
   margin: 0;
   padding:0;
-  background-color: #2D2D2D;
+  background-color:#433A4D;
   height: auto;
+  
 }
 
 #partecipanti {
@@ -389,6 +395,7 @@ template {
   background-color: #2D2D2D;
   font-size: 15px;
   color: white;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #classifica {
@@ -396,6 +403,7 @@ template {
   background-color: #2D2D2D;
   font-size: 15px;
   color: white;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #nomepartita {
@@ -403,6 +411,7 @@ template {
   background-color: #2D2D2D;
   font-size: 15px;
   color: white;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -474,15 +483,9 @@ template {
   margin: 0;
   text-align: center;
   padding: 10px;
-  background: #d6d6d6;
-  background: -moz-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(48%, #d6d6d6), color-stop(75%, #d6d6d6), color-stop(86%, #bebebe), color-stop(88%, #bababa), color-stop(100%, #a1a1a1));
-  background: -webkit-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: -o-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: -ms-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: linear-gradient(to bottom, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6d6d6', endColorstr='#a1a1a1', GradientType=0);
-  color: black;
+  background: #433A4D;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
 }
 
 .riquadro{
@@ -491,15 +494,10 @@ template {
   padding: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  color: black;
-  background: #d6d6d6;
-  background: -moz-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(48%, #d6d6d6), color-stop(75%, #d6d6d6), color-stop(86%, #bebebe), color-stop(88%, #bababa), color-stop(100%, #a1a1a1));
-  background: -webkit-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: -o-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: -ms-linear-gradient(top, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  background: linear-gradient(to bottom, #d6d6d6 48%, #d6d6d6 75%, #bebebe 86%, #bababa 88%, #a1a1a1 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d6d6d6', endColorstr='#a1a1a1', GradientType=0);
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  background-color:#433A4D;
+
   
 }
 
@@ -509,32 +507,87 @@ template {
   padding: 20px;
   background-color: #2D2D2D;
   overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
 }
-#menuGame{padding:5px;background-color:red}
-#selplayer{padding:5px;background-color:green}
-#comandi{padding:5px;background-color: red;}
-#impostazioni{padding:5px;background-color: #2D2D2D;}
+#menuGame{
+    padding:19px;
+    background-color:#433A4D;
+    width: 10%;
+    height: 18.2%;
+    margin-right: 2%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#selplayer{
+    padding:20px;
+    background-color:#433A4D;
+    width: 10%;
+    height: 18%;
+      margin-right: 2%;
+      font-family: 'Josefin Sans', sans-serif;
+}
+#comandi{
+    padding:20px;
+    background-color: #525D8B;
+    width: 22%;
+    height: 18%;
+    color: white;
+      margin-right: 2%;
+      font-family: 'Josefin Sans', sans-serif;
+}
+#impostazioni{
+    padding:5px;
+    width: 22%;
+    height: 21.5%;
+    background-color:#433A4D;
+    font-family: 'Josefin Sans', sans-serif;
+}
 button {
   padding: 10px;
-  border: 2px solid black;
+    font-size: 12px;
+  border: 1px solid white;
   color: white;
   background-color:transparent;
+  font-family: 'Josefin Sans', sans-serif;
   width: auto;
 }
 button:hover{
   background-color:black;
 }
+#reset{background-color: red; width:100%;}
+#play{background-color: green;width:100%;}
 
 label {
+
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
+}
+.multi{
+    width: 100%;
+    background-color: black
+    
+}
+
+/*SELECT*/
+select{
+  padding:3px;
+  color:white;
+  background-color: #2D2D2D;
+  border:none;
+  margin-bottom: 4px;
+}
+option{
+  color:white;
+  padding:5px;
+  background-color: #2D2D2D;
+  border-radius:15px;
 }
 
 /*---CLEARFIX---*/
 .clearfix{
   clear:both;
 }
+
 
 
 

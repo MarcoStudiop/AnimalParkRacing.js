@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
     <!---------------------------------------------------------------------------------------------->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- meta per la  compatibilità -->
@@ -29,10 +30,21 @@
         color: #4fa000;
     }
     </style>
+=======
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- meta per la  compatibilità -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PolloParkRacing</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="js/fullPage.js/src/fullpage.css">
+    <link rel="icon" href="img/pollo.png">
+
+>>>>>>> master
 
 </head>
 
 <body>
+<<<<<<< HEAD
 
     <!--RENDE IL BACKGROUND OPACO-->
     <!---------------------------------------------------------------------------------------------->
@@ -82,6 +94,40 @@
 
             <!--SEZIONE DOWNLOAD-->
             <!---------------------------------------------------------------------------------------------->
+=======
+ 
+
+        <div class="background-image"></div>
+    
+        <div id="menu"class="navbar">
+            <ul class="navbar-ul navbar-left">
+                <li data-menuanchor="intro"  class="navbar-li"><a class="navbar-li-a" href="#intro">Intro</a></li>
+                <li data-menuanchor="downloads"  class="navbar-li"><a class="navbar-li-a" href="#downloads">Downloads</a></li>
+                <li data-menuanchor="riconoscimenti" class="navbar-li"><a class="navbar-li-a" href="#riconoscimenti">Riconoscimenti</a></li>
+                <li data-menuanchor="report" class="navbar-li"><a class="navbar-li-a" href="#report">Report</a></li>
+            </ul>
+
+        </div>
+        <div id=fullpage>
+        <div class="content" >
+
+            <div class="section intro container col-xsx-12 col-smx-12 col-mdx-12 col-lgx-12" id="section0">
+                
+               
+                    <h1 class="text-center">Il Gioco</h1>
+                    <hr class="hr-center">
+             
+                <div class="boxAnimato">
+                    <div class="gif-intro col-xsx-12 col-smx-12"></div>
+                    <br>
+                    <button type="button" class="col-xsx-12 col-smx-12" onclick="GoOnUrl('minipolli.html')">Prova il gioco </button>
+                </div>
+                <div id="countdown-index">
+
+                    </div>
+            </div>
+
+>>>>>>> master
 
             <div class="section downloads container col-xsx-12 col-smx-12 col-mdx-12 col-lgx-12" id="section1">
 
@@ -93,6 +139,7 @@
                 </div>
 
             </div>
+<<<<<<< HEAD
             <!---------------------------------------------------------------------------------------------->
 
 
@@ -172,10 +219,51 @@
             alert("Grazie per aver inviato questa email di supporto." + "\n" + " Ti risponderò a breve.");
         }
         //---------------------------------------------------------------------------------------------//
+=======
+
+
+            <div class="section riconoscimenti container col-xsx-12 col-smx-12 col-mdx-12 col-lgx-12" id="section2">
+
+                    <h1 class="text-center">Riconoscimenti</h1>
+                    <hr class="hr-center">
+                    <p class="text-center">Sviluppo idea : Marco Saviano </p>
+                    <p class="text-center">Disegno&Icon : Anna Cagni </p>
+                    <p class="text-center">Testing : Giulia Pastrolin </p>
+                    <h1 class="text-center">Dispense GitHub</h1>
+                    <hr class="hr-center">
+                    <p class="text-center">Risorse fullpageJS : Alvaro Trigo </p>
+                    <button id="b0" type="button" onclick='GoOnUrl("https://github.com/alvarotrigo/fullpage.js")'>GitHub di Alvaro</button>
+            </div>
+
+            <div class="section report container col-xsx-12 col-smx-12 col-mdx-12 col-lgx-12" id="section3" >
+
+                    <h1 class="text-center">Report</h1>
+                    <form id="reports">
+                    <fieldset>
+                    <input type="text" name="user" id="username" placeholder="username">
+                    <input type="text" name="issue" id="motivo" placeholder="problema">
+                    <textarea></textarea>
+                    </fieldset>
+                    </form>
+                    <hr class="hr-center">
+            </div>
+        </div>
+    </div>
+    <script>
+        /* SCRIPT PARALLAX*/
+        function GoOnUrl(url) {
+            window.open(url);
+        };
+
+        function introA() {
+
+        };
+>>>>>>> master
 
 
 
         /* COUNTDOWN */
+<<<<<<< HEAD
         //---------------------------------------------------------------------------------------------//
 
         // STABILISCI LA DATA DI FINE COUNTDOWN QUI
@@ -218,11 +306,40 @@
             //---------------------------------------------------------------------------------------------//
             var distance = countdown - now;
             //---------------------------------------------------------------------------------------------//
+=======
+
+        // STABILISCI LA DATA DI FINE COUNTDOWN QUI
+        var countdown = new Date("Dec 13 , 2019 15:00:00");
+        // CREA IL PARAGRAFO DOVE ANDRÀ INSERITO IL COUNTDOWN
+        var boxstamp = document.createElement("p");
+        // IL CONTENITORE CHE AVRÀ COME FIGLIO IL PARAGRAFO
+        var stamp = document.getElementById("countdown-index");
+
+        // ID DEL NUOVO PARAGRAFO
+        boxstamp.id = "cdDate";
+        boxstamp.className = "text-center";
+        stamp.appendChild(boxstamp);
+
+        // AGGIORNAMENTO COUNTDOWN OGNI 1 SEC
+        var update_cd = setInterval(function () {
+            update(countdown);
+        }, 1000);
+
+        // FUNZIONE DI AGGIORNAMENTO
+        function update(countdown) {
+
+            // PRENDE LA DATA DI OGGI E IL TEMPO
+            var now = new Date().getTime();
+
+            // SOTTRA LA DISTANZA TRA IL GIORNO DI COUNTDOWN E LA DATA DI OGGI
+            var distance = countdown - now;
+>>>>>>> master
 
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+<<<<<<< HEAD
             //---------------------------------------------------------------------------------------------//
 
             //MOSTRA IL COUNTDOWN
@@ -231,10 +348,18 @@
                 "<b class='txt-color'>" + hours + "</b>" + "H" + "<b class='txt-color'>" + minutes + "</b>" + "M" +
                 "<b class='txt-color'>" + seconds + "</b>" + "S";
             //---------------------------------------------------------------------------------------------//    
+=======
+
+            //MOSTRA IL COUNTDOWN
+            document.getElementById("cdDate").innerHTML = "<b class='txt-color'>" + days + "</b>" + "Days" +
+                "<b class='txt-color'>" + hours + "</b>" + "H" + "<b class='txt-color'>" + minutes + "</b>" + "M" +
+                "<b class='txt-color'>" + seconds + "</b>" + "S";
+>>>>>>> master
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("cdDate").innerHTML = "DISPONIBILE ORA";
             }
+<<<<<<< HEAD
             //---------------------------------------------------------------------------------------------//
 
         }
@@ -258,6 +383,21 @@
 
 
 
+=======
+        }
+    </script>
+    <!-- ALVARO TRIGO SCROLL JS -->
+    <script src="js/fullPage.js/dist/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            menu: '#menu',
+            anchors: ['intro', 'downloads', 'riconoscimenti','report'],
+            
+            autoScrolling: true,
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE'
+        });
+    </script>
+>>>>>>> master
 </body>
 
 </html>

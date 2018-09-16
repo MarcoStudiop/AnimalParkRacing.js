@@ -153,7 +153,21 @@ function tasto_FRECCIADESTRA(arrow_left) {
 }
 //---------------------------------------------------------------------------------------------//
 
+<<<<<<< HEAD
 
+=======
+/* Registro */
+
+//IL REGISTRO MI  SERVE IN POSIZIONE PER DIFFERENZIARE I VALORI GENERATI IN POSIZIONE
+// ES : POL1.POSIZIONE(registro);  registro = posx1
+var reg_m = new Array(); // REGISTRA  VELOCITA BASE E ACCELLERA
+var mem_pos = new Array(3); // MEMORIZZA POSX
+var i;
+/*Sessione*/
+
+/*Object : Pollo*/
+function pollo(nome, peso, altezza, speed) {
+>>>>>>> master
 
 
 /* ########## COSTRUTTORE ANIMALE : POLLO  ##########*/
@@ -178,6 +192,7 @@ function pollo(default_NOME, nome, peso, altezza, speed) {
 
     //# ICONA
     this.elemento = document.createElement("img");
+<<<<<<< HEAD
     //---------------------------------------------------------------------------------------------//
 
     //# POSIZIONE DI PARTENZA
@@ -199,6 +214,17 @@ function pollo(default_NOME, nome, peso, altezza, speed) {
     */
 
 };
+=======
+    this.inizializza = inizializza; // la posizione iniziale
+    this.posizione = posizione; // la posizione nel recinto // identità del giocatore in gara
+    this.speed = speed; //la velocità in secondi del pollo(standard)
+    //  this.velocita = velocita;
+};
+// Creazione Object : Pollo */
+var pol1 = new pollo("cassandro", 160, 122, 50);
+var pol2 = new pollo("mario", 123, 50, 70);
+var pol3 = new pollo("pino", 60, 60, 60);
+>>>>>>> master
 
 
 
@@ -273,6 +299,7 @@ function myfunction() {
     pollobox1.className = "pollo";
     pollobox2.className = "pollo";
     pollobox3.className = "pollo";
+<<<<<<< HEAD
     //---------------------------------------------------------------------------------------------//
 
 
@@ -283,10 +310,15 @@ function myfunction() {
     ///# PROPRIETÀ IMG POLLO 1
     //---------------------------------------------------------------------------------------------//
     pol1.elemento.src = "img/pollo.png";
+=======
+    /* PROPRIETÀ POLLO 1 */
+    pol1.elemento.src = "../img/pollo.png";
+>>>>>>> master
     pol1.elemento.style.width = "50px";
     pol1.elemento.style.height = "50px";
     pol1.elemento.style.position = "absolute";
     pol1.elemento.setAttribute("value", pol1.nome);
+<<<<<<< HEAD
     //---------------------------------------------------------------------------------------------//
 
     pol1.elemento.id = "player1";
@@ -295,16 +327,25 @@ function myfunction() {
     ///# PROPRIETÀ IMG POLLO 2
     //---------------------------------------------------------------------------------------------//
     pol2.elemento.src = "img/pollo.png";
+=======
+    /* PROPRIETÀ POLLO 2 */
+    pol2.elemento.src = "../img/pollo.png";
+>>>>>>> master
     pol2.elemento.style.width = "50px";
     pol2.elemento.style.height = "50px";
     pol2.elemento.style.position = "absolute";
     pol2.elemento.setAttribute("value", pol2.nome);
     pol2.elemento.style.filter = "hue-rotate(200deg)";
+<<<<<<< HEAD
     //---------------------------------------------------------------------------------------------//
 
     ///# PROPRIETÀ IMG POLLO 3
     //---------------------------------------------------------------------------------------------//
     pol3.elemento.src = "img/pollo.png";
+=======
+    /* PROPRIETÀ POLLO 3 */
+    pol3.elemento.src = "../img/pollo.png";
+>>>>>>> master
     pol3.elemento.style.width = "50px";
     pol3.elemento.style.height = "50px";
     pol3.elemento.style.position = "absolute";
@@ -364,7 +405,11 @@ function myfunction() {
 
 //# GARA 0.2
 
+<<<<<<< HEAD
 //---------------------------------------------------------------------------------------------//
+=======
+/* Funzione Costruttore : Gara() */
+>>>>>>> master
 function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
 
     //# SPIEGAZIONE
@@ -398,6 +443,7 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
     //# METODO CLASSIFICA
     //---------------------------------------------------------------------------------------------//
     this.classifica = classifica;
+<<<<<<< HEAD
 
     //# TEMPO PARTITA
     //---------------------------------------------------------------------------------------------//
@@ -508,6 +554,24 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                 //---------------------------------------------------------------------------------------------//
                 else {
                     alert("Il personaggio : " + pol1.default_NOME + " è stato già preso");
+=======
+    this.tempo_partita = tempo_partita; // ; da definire
+
+    function partecipanti() {
+        var selgiocatore1 = prompt("Seleziona Personaggio : Digita '01' Cassandro '02' Mario '03' Pino ");
+        //var giocatore2 = prompt("Seleziona Personaggio : Digita '01' Cassandro '02' Mario '03' Pino ");
+        //var qnt_giocatori = uno switch per selezionare quanti giocatori
+        var partecipanti = new Array(3);
+
+        switch (selgiocatore1) {
+
+            case '01':
+                if (pol1.player == null) {
+                    pol1.player = pol1.nome;
+                    partecipanti[0] = pol1.player;
+                } else {
+                    alert("Cassandro è stato già preso");
+>>>>>>> master
                 }
 
                 if (pol2.player != null) {
@@ -526,6 +590,7 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                     pol3.player = "bot";
                     partecipanti[2] = pol2.player;
                 }
+<<<<<<< HEAD
                 break;
                 //# CASO 2 : PLAYER 2 VS BOT
                 //---------------------------------------------------------------------------------------------//
@@ -570,6 +635,16 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                 } else {
                     //#DICHIARA DI ESSERE STATO GIÀ SELEZIONATO
                     alert("Il personaggio : " + pol2.default_NOME + " è stato già preso");
+=======
+
+                break;
+            case '02':
+                if (pol2.player == null) {
+                    pol2.player = pol2.nome;
+                    partecipanti[1] = pol2.player;
+                } else {
+                    alert("Mario è stato già preso");
+>>>>>>> master
                 }
                 if (pol1.player != null) {
                     pol1.player = pol1.nome;
@@ -587,6 +662,7 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                     partecipanti[2] = pol3.player;
                 }
                 break;
+<<<<<<< HEAD
                 //# CASO 3 : PLAYER 3 VS BOT
             case 'p3':
                 //---------------------------------------------------------------------------------------------//
@@ -655,6 +731,14 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                 } else {
                     pol3.player = "bot";
                     partecipanti[2] = pol3.player;
+=======
+            case '03':
+                if (pol3.player == null) {
+                    pol3.player = pol3.nome;
+                    partecipanti[2] = pol3.player;
+                } else {
+                    alert("già preso");
+>>>>>>> master
                 }
                 if (pol1.player != null) {
                     pol1.player = pol1.nome;
@@ -671,6 +755,7 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                     pol2.player = "bot";
                     partecipanti[1] = pol2.player;
                 }
+<<<<<<< HEAD
 
         };
 
@@ -678,6 +763,14 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
         /* ########## NEXT ADD :  2 PLAYER  ##########*/
         
             /*switch (selgiocatore2.value) {
+=======
+                break;
+
+
+        };
+        /* SPAZIO DEDICATO ALLA POSSIBILITA DI PIÙ GIOCATORI
+            switch (giocatore2) {
+>>>>>>> master
     
             case 01:
                 if (pol1.player == null) {
@@ -701,7 +794,11 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                 break;
             case 02:
                 if (pol2.player == null) {
+<<<<<<< HEAD
                     pol2.player = pol2.nome;
+=======
+                    pol2.player = pol1.nome;
+>>>>>>> master
                 } else {
                     alert("già preso");
                 }
@@ -733,6 +830,7 @@ function gara(nome_gara, partecipanti, obiettivo, sessione_gara, classifica) {
                 } else {
                     pol2.player = "bot";
                 }
+<<<<<<< HEAD
                 break;  */
 
                 
@@ -909,6 +1007,27 @@ function posizione(i) {
 
     }
     //---------------------------------------------------------------------------------------------//
+=======
+                break;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                */
+        var y = document.getElementById("partecipanti");
+        y.innerHTML = "<p> PARTECIPANTI : |*" + partecipanti[0] + "*||*" + partecipanti[1] + "*| |* " + partecipanti[2] + "*|";
+        return partecipanti.valueOf();
+
+    };
+    //definire i partecipanti
+    this.partecipanti = partecipanti();
+};
+>>>>>>> master
 
 
     //#PARTE 2 : ARRIVATO AD UN VALORE INTORNO A 1500, SI FERMANO I GIOCATORI
@@ -922,6 +1041,12 @@ function posizione(i) {
     return mem_pos[i];
     //---------------------------------------------------------------------------------------------//
 
+<<<<<<< HEAD
+=======
+    // CREO LA PARTITA
+    var partita = new gara("corsadei1500", "partecipanti();", 1500, false, "classifica();");
+    return partita;
+>>>>>>> master
 };
 
 /* ########## IL GIOCO ##########*/
@@ -981,8 +1106,25 @@ export function start() {
 
     // GIOCATORE 1 È FUORI DALL'INTERVALLO, PERCHÈ L'INTERVALLO SIAMO NOI
 
+<<<<<<< HEAD
     //ASSOCIO AL DOCUMENTO L'EVENTO ONKEYDOWN CHE PRENDERÀ LA FUNZIONE DEL TASTO ASSOCIATO
     
+=======
+// Metodo : inizializza()
+function inizializza(posx1, posy1, posx2, posy2) {
+    this.elemento.style.left = posx1;
+    this.elemento.style.top = posy1;
+    this.elemento.style.bottom = posy2;
+    this.elemento.style.right = posx2;
+};
+// Metodo : speed()
+function tempo_partita() {
+    var velocita = Math.floor(Math.random() * 500);
+    return velocita;
+};
+// Metodo : posizione()
+function posizione(i) {
+>>>>>>> master
 
     //E TRAMITE LA VARIABILE GIOCATORE1 MI PIGLIO IL RISULTATO E TUTTO RIMANE INVARIATO COME PRIMA
     // E FUNZIONA  P.S IL PERSONAGGIO NON SI FERMA PER IL MOMENTO.
@@ -990,10 +1132,35 @@ export function start() {
     /* GIOCATORE 1 PLAYER VS BOT */
     giocatore1 = tasto_d;
 
+<<<<<<< HEAD
 
 //---------------------------------------------------------------------------------------------//
+=======
+    function registro(velocita_BASE, accellera) {
+        this.velocita_BASE = velocita_BASE;
+        this.accellera = accellera;
 
+    };
+    reg_m[i] = new registro(this.speed, Math.floor(Math.random() * 200));
 
+    // PER EVITARE CHE CONTINU AD AZZERARSI, IO L'INIZILIZZAZIONE LA FACCIO UNA VOLTA SOLA
+    if (mem_pos[i] == null) {
+        mem_pos[i] = posx1;
+        // LO SPOSTAMENTO DELLA PRIMA VOLTA
+        if (reg_m[i].accellera >= mem_pos[i]) {
+            mem_pos[i] = reg_m[i].accellera + reg_m[i].velocita_BASE;
+            this.elemento.style.left = /*mem_pos[i]*/ mem_pos[i] + "px";
+        }
+    }
+    // ESEGUITA LA PRIMA PARTE, QUESTA, SI RIPETERA'
+    else if (reg_m[i].accellera <= mem_pos[i]) {
+        mem_pos[i] = mem_pos[i] + reg_m[i].accellera;
+        this.elemento.style.left = mem_pos[i] + "px";
+>>>>>>> master
+
+    }
+
+<<<<<<< HEAD
 
 /* ########## FUNZIONE MOTORE : PONTE ##########*/
 //---------------------------------------------------------------------------------------------//
@@ -1004,18 +1171,44 @@ function ponte(tempoDigioco, sessione_partita) {
     //---------------------------------------------------------------------------------------------//
     var check_player = sessione_partita.partecipanti;
     //---------------------------------------------------------------------------------------------//
+=======
+    // SE RAGGIUNGO I 1500 LA POSIZIONE SI INTERROMPERA'
+
+    if (mem_pos[i] >= 1400 && mem_pos[i] == 1500) {
+        clearInterval();
+
+
+        /* else{
+             return posx1;
+         }*/
+
+    }
+    // RITORNO IL VALORE MEMORIZZATO DI POSX 
+    return mem_pos[i];
+>>>>>>> master
 
 
 
+<<<<<<< HEAD
+=======
+    var sessione_partita = creaPartita();
+    sessione_partita.nomepartita = prompt("Dai un nome alla partita");
+    var stanza = document.getElementById("nomepartita");
+    stanza.innerHTML = "ROOM NAME : " + sessione_partita.nomepartita;
+>>>>>>> master
 
     //# FINCHÈ NON RAGGIUNGONO 1500 CONTINUI A DARE UNA POSIZIONE
 
     /* ########## MOTORE DI MOVIMENTO ##########*/
 
 
+<<<<<<< HEAD
     //---------------------------------------------------------------------------------------------//
     if ((giocatore2 != 1500) || (giocatore3 != 1500)) {
         //---------------------------------------------------------------------------------------------//
+=======
+    tempoDigioco = setInterval(function () { ponte(tempoDigioco, sessione_partita); }, t_partita);
+>>>>>>> master
 
         //# I GIOCATORI HANNO TUTTI UNA POSIZIONE E UN INDICE
 
@@ -1027,11 +1220,16 @@ function ponte(tempoDigioco, sessione_partita) {
         */
         //---------------------------------------------------------------------------------------------//
 
+<<<<<<< HEAD
+=======
+function ponte(tempoDigioco, sessione_partita) {
+>>>>>>> master
 
         /* ########## COMANDI ##########*/
         //---------------------------------------------------------------------------------------------//
 
 
+<<<<<<< HEAD
         //## ANIMALE 1 ##
         //---------------------------------------------------------------------------------------------//
         //giocatore1 = pol1.posizione(0);
@@ -1049,6 +1247,26 @@ function ponte(tempoDigioco, sessione_partita) {
     //---------------------------------------------------------------------------------------------//
     if ((giocatore1 >= 1500) || (giocatore2 >= 1500) || (giocatore3 >= 1500)) {
         //---------------------------------------------------------------------------------------------//
+=======
+    if ((giocatore1 != 1500) || (giocatore2 != 1500) || (giocatore3 != 1500)) {
+
+        giocatore1 = pol1.posizione(0);
+        /* if(giocatore1 >= 1500){
+             clearInterval(tempoDigioco);
+         }*/
+        giocatore2 = pol2.posizione(1);
+        /* if(giocatore2 >= 1500){
+             clearInterval(tempoDigioco);
+         }*/
+        giocatore3 = pol3.posizione(2);
+
+        /* if(giocatore3 == 1500){
+             clearInterval(tempoDigioco);
+         }*/
+    }
+    // BUG : TUTTI DIVENTANO 1500 E DANNO UNDEFINED
+    if ((giocatore1 >= 1500) || (giocatore2 >= 1500) || (giocatore3 >= 1500)) {
+>>>>>>> master
 
 
         //#PONE TERMINE ALLA GARA
@@ -1068,6 +1286,7 @@ function ponte(tempoDigioco, sessione_partita) {
         /* ########## CHECK VINCITORE ##########*/
     };
 
+<<<<<<< HEAD
 
 
     /* ########## METODO :  CLASSIFICA(GARA) ##########*/
@@ -1084,6 +1303,28 @@ function ponte(tempoDigioco, sessione_partita) {
 
         */
 
+=======
+        classifica(giocatore1, giocatore2, giocatore3);
+    };
+
+
+
+    /* else{
+ 
+         giocatore1 = pol1.posizione();
+         if(giocatore1 >= 1500){
+             clearInterval(tempoDigioco);
+         }
+         giocatore2 = pol2.posizione();
+         if(giocatore2 >= 1500){
+             clearInterval(tempoDigioco);
+         }
+         giocatore3 = pol3.posizione();
+ 
+         if(giocatore3 == 1500){
+             clearInterval(tempoDigioco);
+         }*/
+>>>>>>> master
 
         //#ARRAY DELLA CLASSIFICA
         //---------------------------------------------------------------------------------------------//
@@ -1092,6 +1333,7 @@ function ponte(tempoDigioco, sessione_partita) {
         //---------------------------------------------------------------------------------------------//
         var x = document.getElementById("classifica");
 
+<<<<<<< HEAD
         //#CONFRONTO GIOCATORE 1
         //---------------------------------------------------------------------------------------------//
         if ((giocatore1 > giocatore2) && (giocatore1 > giocatore3)) {
@@ -1148,6 +1390,20 @@ function ponte(tempoDigioco, sessione_partita) {
             if (check_player[2] != "bot") {
                 alert("COMPLIMENTI HAI VINTO TU!!!");
             }
+=======
+    if (giocatore1 == 1500) {
+        sessione_partita.vincitore = check_player[0];
+        if (check_player[0] != "bot") {
+            alert("COMPLIMENTI HAI VINTO TU!!!");
+        }
+
+    }
+
+    if (giocatore2 == 1500) {
+        sessione_partita.vincitore = check_player[1];
+        if (check_player[1] != "bot") {
+            alert("COMPLIMENTI HAI VINTO TU!!!");
+>>>>>>> master
 
         }
         //---------------------------------------------------------------------------------------------//
@@ -1168,13 +1424,30 @@ RIUSCITO IN QUALCHE MODO AD AVERE L'EVENTO
 P.S CONSIDERERÒ L'IDEA DI USARE I DIV PER GLI EVENT ON KEY */
 
 
+<<<<<<< HEAD
 // PRENDE IL PRIMO DIV CON LA CLASSE POLLO
 var key_p1 = document.getElementsByClassName("pollo")[0];
 
 
+=======
+    function classifica(giocatore1, giocatore2, giocatore3) {
+
+
+        var classifica = new Array(3);
+        var x = document.getElementById("classifica");
+        if ((giocatore1 > giocatore2) && (giocatore1 > giocatore3)) { classifica[0] = pol1.player + "| posizione : " + String(giocatore1) + "px"; }
+        else if (giocatore2 > giocatore1 && giocatore2 > giocatore3) { classifica[0] = pol2.player + "| posizione : " + String(giocatore2) + "px"; }
+        else if (giocatore3 > giocatore1 && giocatore3 > giocatore2) { classifica[0] = pol3.player + "| posizione : " + String(giocatore3) + "px"; };
+>>>>>>> master
 
 //---------------------------------------------------------------------------------------------//
 
+<<<<<<< HEAD
+=======
+        if ((giocatore1 > giocatore2) && (giocatore1 < giocatore3)) { classifica[1] = pol1.player + "| posizione : " + String(giocatore1) + "px"; }
+        else if (giocatore2 > giocatore1 && giocatore2 < giocatore3) { classifica[1] = pol2.player + "| posizione : " + String(giocatore2) + "px"; }
+        else if (giocatore3 > giocatore1 && giocatore3 < giocatore2) { classifica[1] = pol3.player + "| posizione : " + String(giocatore3) + "px"; };
+>>>>>>> master
 
 //---------------------------------------------------------------------------------------------//
  function tasto_D(e) {
@@ -1182,11 +1455,18 @@ var key_p1 = document.getElementsByClassName("pollo")[0];
         //alert("succedequalcosa");
     //ASSOCIO IL TASTO "D" DELLA TASTIERA ALL'EVENTO KEYDOWN
 
+<<<<<<< HEAD
     //TEST A VIDEO DEL VALORE UNICODE DEL TASTO "D"
     // document.getElementById("demo2").innerHTML = "The Unicode KEY code is: " + key;
+=======
+        if ((giocatore1 < giocatore2) && (giocatore1 < giocatore3)) { classifica[2] = pol1.player + "| posizione : " + String(giocatore1) + "px"; }
+        else if (giocatore2 < giocatore1 && giocatore2 < giocatore3) { classifica[2] = pol2.player + "| posizione : " + String(giocatore2) + "px"; }
+        else if (giocatore3 < giocatore1 && giocatore3 < giocatore2) { classifica[2] = pol3.player + "| posizione : " + String(giocatore3) + "px"; };
+>>>>>>> master
 
 //----------------------------------------IMPORTANTE-----------------------------------------------------//
 
+<<<<<<< HEAD
     //QUESTO E.KEYCODE PERMETTE DI RICONOSCERE IL TASTO "D" ASSOCCIATO"
     if(e.keyCode == 68 && giocatore1 != 1500){
      
@@ -1195,11 +1475,15 @@ var key_p1 = document.getElementsByClassName("pollo")[0];
        
      
     }
+=======
+        return x.innerHTML = "<h2>Classifica</h2><br><p id='posto1'>PRIMO POSTO : " + classifica[0] + "</p>" + "<br><p id='posto2'>SECONDO POSTO : " + classifica[1] + "</p>" + "<br><p id='posto3'>TERZO POSTO : " + classifica[2] + "</p>" + "<br><p>Il VINCITORE E' : " + classifica[0] + "!!!!!</p>";
+>>>>>>> master
 
 
     //RITORNA IL GIOCATORE Nulla di particolarmente invariato
     return giocatore1;
 
+<<<<<<< HEAD
 };
 //---------------------------------------------------------------------------------------------//
 
@@ -1213,6 +1497,12 @@ var key_p1 = document.getElementsByClassName("pollo")[0];
 /* ## RICOMINCIA : NUOVA PARTITA ## */
 //---------------------------------------------------------------------------------------------//
 export function ricarica() {
+=======
+/* Creazione */
+creazione();
+//creazione dei polli nel recinto//
+function ricarica() {
+>>>>>>> master
     location.reload();
 };
 //---------------------------------------------------------------------------------------------//

@@ -401,8 +401,11 @@ template {
 
 
 }
+<<<<<<< HEAD
 
 /* BLOCCO INTRO */
+=======
+>>>>>>> master
 .intro{
   position: relative;
   top:0;
@@ -412,9 +415,12 @@ template {
   background-color: #292929;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 
 
 /* BLOCCO DOWNLOADS */
+=======
+>>>>>>> master
 .downloads{
   position: relative;
   top:0;
@@ -431,10 +437,13 @@ template {
   letter-spacing: 15px;
   
 }
+<<<<<<< HEAD
 
 
 
 /* BLOCCO RICONOSCIMENTI */
+=======
+>>>>>>> master
 .riconoscimenti{
   position: relative;
   top:0;
@@ -445,11 +454,15 @@ template {
   color:white;
   opacity: 0.8;
 }
+<<<<<<< HEAD
 
 
 /* BLOCCO REPORT */
 .report{
  
+=======
+.report{
+>>>>>>> master
   position: relative;
   top:0;
   left:0;
@@ -541,8 +554,11 @@ button {
   position: absolute;
   z-index: 1;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 /*Button senza spostamento*/
 #b0{
   position: relative;
@@ -557,6 +573,7 @@ button {
 button:hover{
   background-color:red;
 }
+<<<<<<< HEAD
 
 
 
@@ -564,6 +581,8 @@ button:hover{
 
 
 
+=======
+>>>>>>> master
 .sistema-container{
   padding-left: 25%;
  
@@ -588,6 +607,7 @@ button:hover{
   
 }
 
+<<<<<<< HEAD
 
 
 /* FORM */
@@ -612,6 +632,8 @@ textarea{
 
 
 
+=======
+>>>>>>> master
 /* Classi Preimpostate */
 .div-left {
   float: left;

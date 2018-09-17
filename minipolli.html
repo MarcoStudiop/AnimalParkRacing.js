@@ -1,4 +1,4 @@
-<!doctype >
+<!DOCTYPE>
 <html lang="en">
 
 <head>
@@ -33,16 +33,16 @@
             <!---------------------------------------------------------------------------------------------->
             <div id="menuGame" class="div-left col-xsx-12 col-smx-12 col-mdx-1 col-lgx-1">
 
-                <button id="reset" type="button" >RESET</button>
+                <button id="reset" type="button">RESET</button>
                 <button id="play" type="button">PLAY</button>
                 <br>
                 <br>
                 <label>Modalità di gioco</label>
                 <br>
                 <select id="mode">
-                        <option>1 GIOCATORI</option>
-                        <option>2 GIOCATORI</option>
-                        <option>3 GIOCATORI</option>
+                    <option>1 GIOCATORI</option>
+                    <option>2 GIOCATORI</option>
+                    <option>3 GIOCATORI</option>
                 </select>
                 <br>
 
@@ -232,10 +232,6 @@
     </script>
 
     <script type="text/javascript">
-
-
-
-    
         // HAI GIÀ VISITATO QUESTA PAGINA?
 
         //IMPEDISCE DI RIVISUALIZZARE CONTINUAMENTE LA PAGINA DI WELCOME
@@ -282,7 +278,34 @@
 
         //FIX  DI CREDENZIALI GOOGLE ETC..
         //---------------------------------------------------------------------------------------------//
+        function createCORSRequest(method, url) {
+            var xhr = new XMLHttpRequest();
+            if ("withCredentials" in xhr) {
 
+                // Check if the XMLHttpRequest object has a "withCredentials" property.
+                // "withCredentials" only exists on XMLHTTPRequest2 objects.
+                xhr.open(method, url, true);
+
+            } else if (typeof XDomainRequest != "undefined") {
+
+                // Otherwise, check if XDomainRequest.
+                // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+                xhr = new XDomainRequest();
+                xhr.open(method, url);
+
+            } else {
+
+                // Otherwise, CORS is not supported by the browser.
+                xhr = null;
+
+            }
+            return xhr;
+        }
+
+        var xhr = createCORSRequest('GET', url);
+        if (!xhr) {
+            throw new Error('CORS not supported');
+        }
     </script>
 
 

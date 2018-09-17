@@ -282,7 +282,11 @@ function myfunction() {
 
     ///# PROPRIETÀ IMG POLLO 1
     //---------------------------------------------------------------------------------------------//
+<<<<<<< master
     pol1.elemento.src = "img/pollo.png";
+=======
+    pol1.elemento.src = "./img/pollo.png";
+>>>>>>> FIx
     pol1.elemento.style.width = "50px";
     pol1.elemento.style.height = "50px";
     pol1.elemento.style.position = "absolute";
@@ -294,7 +298,11 @@ function myfunction() {
 
     ///# PROPRIETÀ IMG POLLO 2
     //---------------------------------------------------------------------------------------------//
+<<<<<<< master
     pol2.elemento.src = "img/pollo.png";
+=======
+    pol2.elemento.src = "./img/pollo.png";
+>>>>>>> FIx
     pol2.elemento.style.width = "50px";
     pol2.elemento.style.height = "50px";
     pol2.elemento.style.position = "absolute";
@@ -304,7 +312,11 @@ function myfunction() {
 
     ///# PROPRIETÀ IMG POLLO 3
     //---------------------------------------------------------------------------------------------//
+<<<<<<< master
     pol3.elemento.src = "img/pollo.png";
+=======
+    pol3.elemento.src = "./img/pollo.png";
+>>>>>>> FIx
     pol3.elemento.style.width = "50px";
     pol3.elemento.style.height = "50px";
     pol3.elemento.style.position = "absolute";

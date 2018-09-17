@@ -283,10 +283,14 @@ function myfunction() {
     ///# PROPRIETÀ IMG POLLO 1
     //---------------------------------------------------------------------------------------------//
 <<<<<<< master
+<<<<<<< master
     pol1.elemento.src = "img/pollo.png";
 =======
     pol1.elemento.src = "./img/pollo.png";
 >>>>>>> FIx
+=======
+    pol1.elemento.src = "./img/pollo.png";
+>>>>>>> Update
     pol1.elemento.style.width = "50px";
     pol1.elemento.style.height = "50px";
     pol1.elemento.style.position = "absolute";
@@ -299,10 +303,14 @@ function myfunction() {
     ///# PROPRIETÀ IMG POLLO 2
     //---------------------------------------------------------------------------------------------//
 <<<<<<< master
+<<<<<<< master
     pol2.elemento.src = "img/pollo.png";
 =======
     pol2.elemento.src = "./img/pollo.png";
 >>>>>>> FIx
+=======
+    pol2.elemento.src = "./img/pollo.png";
+>>>>>>> Update
     pol2.elemento.style.width = "50px";
     pol2.elemento.style.height = "50px";
     pol2.elemento.style.position = "absolute";
@@ -313,10 +321,14 @@ function myfunction() {
     ///# PROPRIETÀ IMG POLLO 3
     //---------------------------------------------------------------------------------------------//
 <<<<<<< master
+<<<<<<< master
     pol3.elemento.src = "img/pollo.png";
 =======
     pol3.elemento.src = "./img/pollo.png";
 >>>>>>> FIx
+=======
+    pol3.elemento.src = "./img/pollo.png";
+>>>>>>> Update
     pol3.elemento.style.width = "50px";
     pol3.elemento.style.height = "50px";
     pol3.elemento.style.position = "absolute";
@@ -1016,10 +1028,17 @@ function ponte(tempoDigioco, sessione_partita) {
     //---------------------------------------------------------------------------------------------//
     var check_player = sessione_partita.partecipanti;
     //---------------------------------------------------------------------------------------------//
+<<<<<<< master
 
 
 
 
+=======
+
+
+
+
+>>>>>>> Update
     //# FINCHÈ NON RAGGIUNGONO 1500 CONTINUI A DARE UNA POSIZIONE
 
     /* ########## MOTORE DI MOVIMENTO ##########*/

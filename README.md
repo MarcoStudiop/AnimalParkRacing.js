@@ -52,7 +52,7 @@ INTERNET EXPLORER (NON FUNZIONA)
 TESTATO SU GOOGLE CHROME
 
 1) Avvia Partita
-2) Scrivi uno tra i seguenti valori : 01 o 02 o 03 in base al personaggio
+2) Seleziona il personaggio che vuoi utilizzare
 3) Scrivi il nome che vuoi dare a questa partita
 4) Il programma partirà e si concluderà appena uno dei tre partecipanti supererà la meta
 5) in basso troverete l'output e il risultato della partita con l'eventuale classifica

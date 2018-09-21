@@ -1,0 +1,293 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <!---------------------------------------------------------------------------------------------->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- meta per la  compatibilità -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!---------------------------------------------------------------------------------------------->
+
+    <title>Animal Park</title>
+
+    <!---------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="css/minipolli.css">
+
+</head>
+<!--onload="welcome()"-->
+
+<body onload="visit()">
+
+    <div class="container">
+        <!---------------------------------------------------------------------------------------------->
+        <div class="header">
+            <h1 class="titolo">Animal Park Racing 0.4 </h1>
+
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+
+
+        <div class="selezione">
+
+            <!--MENU PRINCIPALE-->
+            <!---------------------------------------------------------------------------------------------->
+            <div id="menuGame" class="div-left col-xsx-12 col-smx-12 col-mdx-1 col-lgx-1">
+
+                <button id="reset" type="button" onclick="ricarica()">RESET</button>
+                <input id="nome_stanza" type="text" placeholder="Inserisci nome stanza">
+                <button id="play" type="button" onclick="Creazione()">PLAY</button>
+                <br>
+                <br>
+                <label>Modalità di gioco</label>
+                <br>
+                <select id="mode">
+                    <option>1 GIOCATORI</option>
+                    <option>2 GIOCATORI</option>
+                    <option>3 GIOCATORI</option>
+                </select>
+                <br>
+
+            </div>
+            <!---------------------------------------------------------------------------------------------->
+
+
+            <!--BOX DI SELEZIONE PERSONAGGI/COMANDI/-->
+            <!---------------------------------------------------------------------------------------------->
+
+            <div id="selplayer" class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+                <!---------------------------------------------------------------------------------------------->
+                <label>PLAYER 1</label>
+                <br>
+                <!---------------------------------------------------------------------------------------------->
+                <select id="player01">
+                    <option class="personaggio" value="p0">BOT</option>
+                    <option class="personaggio" value="p1">Cassandro Red</option>
+                    <option class="personaggio" value="p2">Mario Blue</option>
+                    <option class="personaggio" value="p3">Pino Green</option>
+                    <option class="personaggio" value="p4">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p5">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p6">Nuovo Personaggio</option>
+                </select>
+                <!---------------------------------------------------------------------------------------------->
+                <br>
+                <label>PlAYER 2</label>
+                <br>
+                <!---------------------------------------------------------------------------------------------->
+                <select id="player02">
+                    <option class="personaggio" value="p0">BOT</option>
+                    <option class="personaggio" value="p1">Cassandro Red</option>
+                    <option class="personaggio" value="p2">Mario Blue</option>
+                    <option class="personaggio" value="p3">Pino Green</option>
+                    <option class="personaggio" value="p4">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p5">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p6">Nuovo Personaggio</option>
+                </select>
+                <!---------------------------------------------------------------------------------------------->
+                <br>
+                <label>PlAYER 3</label>
+                <br>
+                <!---------------------------------------------------------------------------------------------->
+                <select id="player03">
+                    <option class="personaggio" value="p0">BOT</option>
+                    <option class="personaggio" value="p1">Cassandro Red</option>
+                    <option class="personaggio" value="p2">Mario Blue</option>
+                    <option class="personaggio" value="p3">Pino Green</option>
+                    <option class="personaggio" value="p4">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p5">Nuovo Personaggio</option>
+                    <option class="personaggio" value="p6">Nuovo Personaggio</option>
+                </select>
+                <!---------------------------------------------------------------------------------------------->
+                <button id="selection" type="button" onclick="Creazione();">CONFERMA SELEZIONE</button>
+            </div>
+
+
+
+            <!--LISTA COMANDI-->
+            <!---------------------------------------------------------------------------------------------->
+            <div id="comandi" class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+                <label>Comandi PLAYER 1 :</label>
+                <p> TASTI : <button id="comando1" type="button" value="100">d</button> Ti muovi a destra </p>
+                <label>Comandi PLAYER 2 :</label>
+                <p> TASTI : <button id="comando2" type="button" value="39">-></button>Ti muovi a destra </p>
+            </div>
+            <!---------------------------------------------------------------------------------------------->
+
+
+            <!--TEST UNICODE 0.3 -->
+            <!--
+                <p>TASTO PREMUTO-  <span id="demo2"></span></p>
+            -->
+
+
+
+            <!--LISTA IMPOSTAZIONI-->
+            <!---------------------------------------------------------------------------------------------->
+            <div id=impostazioni class="div-left col-xsx-12 col-smx-12 col-mdx-2 col-lgx-2">
+
+                <button class="multi" type="button" onclick="start();">Gara x6(PROSSIMAMENTE)</button>
+                <button class="multi" type="button" onclick="start();">Multiplayer LAN(PROSSIMAMENTE)</button>
+
+            </div>
+            <!---------------------------------------------------------------------------------------------->
+
+
+        </div>
+
+
+        <!--CAMPO DEL GIOCO -->
+        <!---------------------------------------------------------------------------------------------->
+        <div id="recinto">
+            <div id="partenza"></div>
+
+            <div id="fine"></div>
+
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+
+        <!--BARRA RISULTATO + BARRA PERSONAGGI-->
+        <!---------------------------------------------------------------------------------------------->
+        <div class="pannello col-xsx-12 col-smx-12 col-mdx-12 col-lgx-12">
+
+            <!--OUTPUT-->
+            <!---------------------------------------------------------------------------------------------->
+            <div class="output div-left col-xsx-12 col-smx-12 col-mdx-9 col-lgx-9  ">
+
+                <!---------------------------------------------------------------------------------------------->
+                <h1 class="riquadro">Output</h1>
+                <!---------------------------------------------------------------------------------------------->
+                <hr id="hash-line">
+                <!---------------------------------------------------------------------------------------------->
+                <div id="nomepartita"></div>
+                <!---------------------------------------------------------------------------------------------->
+                <hr id="hash-line">
+                <!---------------------------------------------------------------------------------------------->
+                <div id="partecipanti"></div>
+                <!---------------------------------------------------------------------------------------------->
+                <hr id="hash-line">
+                <!---------------------------------------------------------------------------------------------->
+                <div id="classifica"></div>
+                <!---------------------------------------------------------------------------------------------->
+                <hr id="hash-line">
+            </div>
+            <!---------------------------------------------------------------------------------------------->
+
+            <!--BOX PERSONAGGI-->
+            <!---------------------------------------------------------------------------------------------->
+            <div class="personaggi div-left col-xsx-12 col-smx-12 col-mdx-3 col-lgx-3 ">
+
+                <h1 class="riquadro">PERSONAGGI VERSIONE 0.1</h1>
+
+                <div class="galleria"></div>
+
+                <img id="slider" class="col-smx-12" src="http://via.placeholder.com/300x300">
+
+
+                <button type="button" onclick="prev();">prev</button>
+                <button type="button" onclick="next();">next</button>
+                <!---------------------------------------------------------------------------------------------->
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--CHIUSURA CONTAINER-->
+
+    <!---------------------------------------------------------------------------------------------->
+
+    <!--SCRIPT GIOCO-->
+    <script src="js/game.js" type="text/javascript"></script>
+    <!--IL GIOCO-->
+    
+    
+    <!--NON DISPONIBILE ORA --  
+    <script src="js/modules/autojoy.js" type="module"></script>
+    <!--JOY-->
+
+
+    <script type="text/javascript">
+        // HAI GIÀ VISITATO QUESTA PAGINA?
+
+        //IMPEDISCE DI RIVISUALIZZARE CONTINUAMENTE LA PAGINA DI WELCOME
+        function visit() {
+            var visited = localStorage['visited'];
+            if (!visited) {
+                welcome();
+                localStorage['visited'] = true;
+            };
+        }
+        // WELCOME PAGINA
+        //---------------------------------------------------------------------------------------------//
+        function welcome() {
+
+            var first_time = true;
+
+            //---------------------------------------------------------------------------------------------//
+            if (first_time) {
+                var saluto = window.open("welcome.html", "", "width=200", "height=100"); // Opens a new window
+                first_time = false;
+            } else {
+                window.close();
+            }
+
+
+            //---------------------------------------------------------------------------------------------//    
+        };
+
+
+
+        //FIX TEMPORANEO DI CREDENZIALI FIREFOX ETC..
+        //---------------------------------------------------------------------------------------------//
+        var invocation = new XMLHttpRequest();
+        var url = 'http://bar.other/resources/credentialed-content/';
+
+        function callOtherDomain() {
+            if (invocation) {
+                invocation.open('GET', url, true);
+                invocation.withCredentials = true;
+                invocation.onreadystatechange = handler;
+                invocation.send();
+            }
+        };
+
+        //FIX  DI CREDENZIALI GOOGLE ETC..
+        //---------------------------------------------------------------------------------------------//
+        function createCORSRequest(method, url) {
+            var xhr = new XMLHttpRequest();
+            if ("withCredentials" in xhr) {
+
+                // Check if the XMLHttpRequest object has a "withCredentials" property.
+                // "withCredentials" only exists on XMLHTTPRequest2 objects.
+                xhr.open(method, url, true);
+
+            } else if (typeof XDomainRequest != "undefined") {
+
+                // Otherwise, check if XDomainRequest.
+                // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+                xhr = new XDomainRequest();
+                xhr.open(method, url);
+
+            } else {
+
+                // Otherwise, CORS is not supported by the browser.
+                xhr = null;
+
+            }
+            return xhr;
+        }
+
+        var xhr = createCORSRequest('GET', url);
+        if (!xhr) {
+            throw new Error('CORS not supported');
+        }
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

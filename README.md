@@ -8,7 +8,7 @@
 <b>Corse</b> 
 <b>Animali</b>
 
-<p>#Pollo Park Racing è una gara di 3 polli che gareggiano su una linea retta<br>
+<p>#Animal Park Racing è una gara di 3 Animali che gareggiano su una linea retta<br>
 #il primo che supera la linea di destinazione bianca vince.</p>
 
 
